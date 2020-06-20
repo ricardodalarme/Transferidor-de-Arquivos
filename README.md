@@ -22,7 +22,7 @@ Envia diversos fragmentos do arquivo
 | Proprietário -> Cliente | Envia diversos fragmentos do arquivo                                                                        | PeerPackets.File           |
 
 ## Compilando
-O projeto já vem compilado na pasta *\Build*, entretando, caso haja necessidade pode-se compilar o projeto normalmente usando o Visual Studio.
+O projeto já vem compilado na pasta *\Build*, entretanto, caso haja necessidade pode-se compilar o projeto normalmente usando o Visual Studio.
 
 ## Executando
 1. Certifique-se que você possui o .NET Framework 4.8 instalado em sua máquina e a DLL Lidgren.Network no mesmo diretório do programa.
