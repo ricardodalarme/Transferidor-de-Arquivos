@@ -8,14 +8,18 @@ Ele foi desenvolvido na lingugagem C# utilizando o framework [Lidgren.Network](h
 - Fabian Ferreira Samohod (2018003740)
 - Lucas Gomes de Oliveira Santos (2018008479)
 
+Envia diversos fragmentos do arquivo
+
 ## Funcionamento 
-- **Cliente -> Servidor:** Envia o nome de todos os arquivos que estão disponíveis no diretório em que o programa está sendo executado  *{ClientPackets.Join}*
-- **Servidor -> Cliente:** Envia todos os arquivos disponíveis para serem baixados **{ServerPackets.Files}**
-- **Cliente -> Servidor:** Requisita o proprietário de um determinado arquivo *{ClientPackets.RequestOwner}*
-- **Servidor -> Cliente:** Envia o endereço de rede do proprietário do arquivo *{ServerPackets.FileOwner}*
-- **Cliente -> Proprietário:** Requisita o download do arquivo *{PeerPackets.DownloadFile}*
-- **Proprietário -> Cliente:** Envia algumas informações úteis do arquivo *{PeerPackets.FileData}** 
-- **Proprietário -> Cliente:** Envia diversos fragmentos do arquivo *{PeerPackets.File}* 
+| Transmissão             | Descrição                                                                                                   | Pacote                     |
+|-------------------------|-------------------------------------------------------------------------------------------------------------|----------------------------|
+| Cliente -> Servidor     | Envia o nome de todos os arquivos que estão no diretório em que o programa está sendo executado | ClientPackets.Join         |
+| Servidor -> Cliente     | Envia todos os arquivos disponíveis para serem baixados                                                     | ServerPackets.Files        |
+| Cliente -> Servidor     | Requisita o proprietário de um determinado arquivo                                                          | ClientPackets.RequestOwner |
+| Servidor -> Cliente     | Envia o endereço de rede do proprietário do arquivo                                                         | ServerPackets.FileOwner    |
+| Cliente -> Proprietário | Requisita o download do arquivo                                                                             | PeerPackets.DownloadFile   |
+| Proprietário -> Cliente | Envia algumas informações úteis do arquivo                                                                  | PeerPackets.FileData       |
+| Proprietário -> Cliente | Envia diversos fragmentos do arquivo                                                                        | PeerPackets.File           |
 
 ## Compilando
 O projeto já vem compilado na pasta *\Build*, entretando, caso haja necessidade pode-se compilar o projeto normalmente usando o Visual Studio.
