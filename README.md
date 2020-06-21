@@ -8,8 +8,6 @@ Ele foi desenvolvido na lingugagem C# utilizando o framework [Lidgren.Network](h
 - Fabian Ferreira Samohod (2018003740)
 - Lucas Gomes de Oliveira Santos (2018008479)
 
-Envia diversos fragmentos do arquivo
-
 ## Funcionamento 
 | Transmissão             | Descrição                                                                                                   | Pacote                     |
 |-------------------------|-------------------------------------------------------------------------------------------------------------|----------------------------|
