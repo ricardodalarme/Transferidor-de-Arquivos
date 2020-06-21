@@ -99,7 +99,10 @@ namespace Client.Network
                 }
             }
             // Caso o arquivo já esteja aberto vai gerar um erro
-            catch { }
+            catch
+            {
+                Alert(peer, "O proprietário não pode enviar o arquivo agora pois está com ele aberto.");
+            }
         }
 
         private static void File(IPEndPoint peer, string fileName, int currentPart, int bufferSize, byte[] buffer)
@@ -112,6 +115,17 @@ namespace Client.Network
             Data.Write(currentPart);
             Data.Write(bufferSize);
             Data.Write(buffer);
+            ToPeer(peer, Data);
+        }
+
+
+        public static void Alert(IPEndPoint peer, string text)
+        {
+            NetOutgoingMessage Data = Socket.Device.CreateMessage();
+
+            // Empacota e envia o alerta
+            Data.Write((byte)PeerPackets.Alert);
+            Data.Write(text);
             ToPeer(peer, Data);
         }
     }

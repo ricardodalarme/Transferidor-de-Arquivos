@@ -10,6 +10,7 @@
     // Pacotes cliente-cliente
     enum PeerPackets
     {
+        Alert,
         DownloadFile,
         FileData,
         File

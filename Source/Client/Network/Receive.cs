@@ -2,6 +2,7 @@
 using System;
 using System.Net;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace Client.Network
 {
@@ -22,10 +23,17 @@ namespace Client.Network
             // Manuseia os dados recebidos
             switch ((PeerPackets)data.ReadByte())
             {
+                case PeerPackets.Alert: Alert(data); break;
                 case PeerPackets.DownloadFile: DownloadFile(peer, data); break;
                 case PeerPackets.FileData: FileData(peer, data); break;
                 case PeerPackets.File: File(data); break;
             }
+        }
+
+        private static void Alert(NetIncomingMessage data)
+        {
+            // Demonstra uma mensagem na tela
+            MessageBox.Show(data.ReadString());
         }
 
         private static void Files(NetIncomingMessage data)
