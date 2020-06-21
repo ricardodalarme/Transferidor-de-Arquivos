@@ -1,7 +1,7 @@
 # Trabalho de Redes
 O trabalho se trata de um transferidor de arquivos Peer-to-Peer utilizando o protocolo UDP para comunicação, contendo há a existência de um servidor responsável por listar os arquivos disponíveis e indiciar o proprietário de determinado arquivo quando requisitado.
 
-Ele foi desenvolvido na lingugagem C# utilizando o framework [Lidgren.Network](https://github.com/lidgren/lidgren-network-gen3) para o controle da rede. 
+Ele foi desenvolvido na linguagem C# utilizando o framework [Lidgren.Network](https://github.com/lidgren/lidgren-network-gen3) para o controle da rede e é destinado apenas para Windows. 
 
 ## Autores
 - Ricardo Dalarme de Oliveira Filho (2018002475)
