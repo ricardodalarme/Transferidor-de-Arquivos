@@ -3,11 +3,6 @@ O projeto se trata de um transferidor de arquivos Peer-to-Peer utilizando o prot
 
 Ele foi desenvolvido na linguagem C# utilizando o framework [Lidgren.Network](https://github.com/lidgren/lidgren-network-gen3) para o controle da rede e é destinado apenas para Windows. 
 
-## Autores
-- Ricardo Dalarme de Oliveira Filho (2018002475)
-- Fabian Ferreira Samohod (2018003740)
-- Lucas Gomes de Oliveira Santos (2018008479)
-
 ## Funcionamento 
 | Transmissão             | Descrição                                                                                                   | Pacote                     |
 |-------------------------|-------------------------------------------------------------------------------------------------------------|----------------------------|
